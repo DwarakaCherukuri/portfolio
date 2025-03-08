@@ -1,0 +1,103 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* Animated Glow Button Effect */
+.glow-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.glow-button::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #ff7f50, #ff5e62, #ff9966, #ffdab9);
+  z-index: -1;
+  animation: glowing 3s linear infinite;
+  background-size: 400%;
+  filter: blur(5px);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: inherit;
+}
+
+.glow-button:hover::before {
+  opacity: 1;
+}
+
+.glow-button:hover {
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(255, 127, 80, 0.4);
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* Secondary Glow Button */
+.glow-button-secondary {
+  background: rgba(222, 184, 135, 0.2);
+  border: 1px solid rgba(222, 184, 135, 0.4);
+}
+
+.glow-button-secondary::before {
+  background: linear-gradient(45deg, #da7d5f, #c25b3d, #e9967a, #f4a460);
+}
+@keyframes change-text {
+  0%, 15% { content: "Hello,"; }
+  20%, 35% { content: "Hola,"; }
+  40%, 55% { content: "Namaste,"; }
+  60%, 75% { content: "Bonjour,"; }
+  80%, 95% { content: "Ciao,"; }
+}
+
+.greeting::before {
+  content: "Hello,";
+  animation: change-text 10s infinite;
+  margin-right: 0.5rem;
+}
