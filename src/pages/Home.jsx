@@ -9,10 +9,11 @@ import proj3image from '../components/images/redditbot.png';
 import proj4image from '../components/images/dataviz.png';
 import research1 from '../components/images/research1.jpg';
 import research2 from '../components/images/research2.jpg';
+import { FaPalette } from 'react-icons/fa';
+import MultiLanguageGreeting from '../components/MultiLanguageGreeting';
 import RollingGreeting from '../components/RollingGreeting';
 import { FaLinkedin, FaGithub, FaJs, FaHtml5, FaCss3, FaNodeJs, FaPython, FaReact, FaVuejs, FaGit, FaFigma } from 'react-icons/fa';
-import { SiNextdotjs, SiMongodb, SiNetlify, SiAdobexd, SiFramer, SiTailwindcss, SiAdobeillustrator } from 'react-icons/si';
-
+import { SiNextdotjs, SiMongodb, SiNetlify, SiAdobexd, SiFramer, SiTailwindcss, SiFirebase, SiMysql, SiProcreate } from 'react-icons/si';
 
 const Home = () => {
   <div class="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#20B2AA_100%)]]"></div>
@@ -20,11 +21,11 @@ const Home = () => {
     {
       category: 'Technology',
       items: [
+        { name: 'Python', icon: <FaPython className="text-blue-400" /> },
         { name: 'JavaScript', icon: <FaJs className="text-yellow-500" /> },
         { name: 'HTML', icon: <FaHtml5 className="text-orange-500" /> },
         { name: 'CSS', icon: <FaCss3 className="text-blue-500" /> },
         { name: 'Node.js', icon: <FaNodeJs className="text-green-500" /> },
-        { name: 'Python', icon: <FaPython className="text-blue-400" /> },
       ],
       outlineColor: 'stack-1', // Custom orange
     },
@@ -42,19 +43,20 @@ const Home = () => {
     {
       category: 'Tools',
       items: [
-        { name: 'Git', icon: <FaGit className="text-red-500" /> },
-        { name: 'Netlify', icon: <SiNetlify className="text-blue-400" /> },
         { name: 'Figma', icon: <FaFigma className="text-purple-500" /> },
+        { name: 'Procreate', icon: <FaPalette className="text-purple-500" /> }, 
+        { name: 'Framer', icon: <SiFramer className="text-black" /> },{ name: 'Git', icon: <FaGit className="text-red-500" /> },
+        { name: 'Netlify', icon: <SiNetlify className="text-blue-400" /> },
         { name: 'AdobeXD', icon: <SiAdobexd className="text-pink-500" /> },
-        { name: 'Illustrator', icon: <SiAdobeillustrator className="text-orange-500" /> },
-        { name: 'Framer', icon: <SiFramer className="text-black" /> },
       ],
       outlineColor: 'stack-3', // Custom yellow
     },
     {
       category: 'Database',
       items: [
+        { name: 'SQL', icon: <SiMysql className="text-blue-600" /> },
         { name: 'MongoDB', icon: <SiMongodb className="text-green-500" /> },
+        { name: 'Firebase', icon: <SiFirebase className="text-yellow-500" /> },
       ],
       outlineColor: 'stack-4', // Custom dark green
     },
@@ -73,9 +75,9 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 h-full">
             {/* Left content section - moved higher with more space below */}
             <div className="flex flex-col justify-start pt-24 md:pt-32 pb-32">
-              <p className="text-lg mb-4">Hello!</p>
-              
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 mb-4 md:text-nowrap">
+            <p className="text-lg mb-4" style={{ fontFamily: "'American Typewriter', 'Courier New', monospace", letterSpacing: "0.05em" }}>
+  <MultiLanguageGreeting typingDelay={100} pauseDelay={1500} />
+</p>       <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy-900 mb-4 md:text-nowrap">
                 I'm Dwaraka Mai.
               </h1>
               
@@ -552,8 +554,8 @@ const Home = () => {
             <path d="M9 16a5 5 0 0 1 5 5v1H4v-1a5 5 0 0 1 5-5z" />
           </svg>
         </div>
-        <h3 className="text-lg font-semibold text-center mb-2">UX Design Certificate</h3>
-        <p className="text-sm text-gray-600 text-center mb-3">Professional UX Design Training</p>
+        <h3 className="text-lg font-semibold text-center mb-2">Google UX Design </h3>
+        <p className="text-sm text-gray-600 text-center mb-3">Google UX Design Professional Certificate</p>
         <div className="flex justify-center">
           <span className="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
             Google
@@ -573,7 +575,7 @@ const Home = () => {
         <p className="text-sm text-gray-600 text-center mb-3">Programming & Development</p>
         <div className="flex justify-center">
           <span className="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">
-            GUVI, Udemy
+            GUVI
           </span>
         </div>
       </div>
@@ -696,7 +698,7 @@ const Home = () => {
       <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
     </svg>
   </a>
-  <a href="https://dribbble.com/YOUR_USERNAME" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
+  <a href="https://dribbble.com/dwazzle" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-gray-900">
     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path fillRule="evenodd" d="M12 0C5.375 0 0 5.375 0 12s5.375 12 12 12 12-5.375 12-12S18.625 0 12 0zm10 12c0 .32-.02.645-.05.955a15.993 15.993 0 0 0-.32-1.79c-.134-.56-.325-1.092-.589-1.592.11.22.17.458.17.717 0 .86-.7 1.56-1.56 1.56a1.56 1.56 0 0 1-1.56-1.56 1.56 1.56 0 0 1 1.648-1.56c-.533-.192-1.115-.273-1.709-.19-.909.13-1.71.687-2.17 1.515-.735-.257-1.44-.636-2.04-1.16-.144-.254-.32-.49-.522-.698-.728.965-1.075 2.248-.635 3.54.08.237.194.46.327.67-.665.45-1.288.95-1.866 1.494-.662.626-1.25 1.323-1.724 2.093-.144.233-.27.471-.38.722H8.08a6.678 6.678 0 0 0 2.425-1.77C10.124 14.38 9.98 13.9 9.98 13.38c0-1.974 1.605-3.58 3.58-3.58 1.974 0 3.58 1.606 3.58 3.58a3.591 3.591 0 0 1-.801 2.277A6.686 6.686 0 0 0 18.828 14H20c0 .646-.082 1.275-.236 1.876.157-.172.3-.354.426-.552.545-.857.83-1.87.83-2.893-.002-2.785-2.133-5.055-4.744-5.35a8.04 8.04 0 0 0-2.306.097c-1.303.27-2.438.887-3.295 1.77.05-.024.103-.042.155-.042.397 0 .72.322.72.72a.718.718 0 0 1-.72.72.718.718 0 0 1-.72-.72c0-.2.082-.38.214-.512-.318.328-.604.687-.856 1.066-.44.668-.733 1.414-.864 2.21.194-.292.49-.472.813-.472.55 0 1 .448 1 1s-.45 1-1 1c-.512 0-.937-.384-.993-.892-.03.24-.047.486-.047.734 0 .776.156 1.52.457 2.212.172-.14.375-.222.617-.222.535 0 .97.435.97.97s-.435.97-.97.97a.973.973 0 0 1-.934-.71c.842 1.75 2.27 3.088 4.03 3.74-.07-.136-.11-.29-.11-.45 0-.55.448-1 1-1s1 .45 1 1-.448 1-1 1c-.122 0-.238-.026-.344-.07 1.562.503 3.198.503 4.75.01a.973.973 0 0 1-.406.09.968.968 0 0 1-.97-.97c0-.535.436-.97.97-.97s.97.435.97.97c0 .143-.03.28-.085.405 1.892-1.085 3.118-3.14 3.118-5.435 0-3.46-2.8-6.27-6.27-6.27-3.44 0-6.27 2.82-6.27 6.27 0 .51.06 1.02.18 1.5-.88 1.17-1.427 2.44-1.584 3.38-1.217-1.28-1.966-3.016-1.966-4.91C2 6.486 6.486 2 12 2s10 4.486 10 10z" clipRule="evenodd" />
     </svg>

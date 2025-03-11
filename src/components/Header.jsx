@@ -149,7 +149,9 @@ const Header = () => {
             </button>
             
             <div className="relative group">
-              <span className="font-medium">Dwaraka Mai Cherukuri</span>
+            <span className="font-medium" style={{ fontFamily: "'American Typewriter', 'Courier New', monospace", letterSpacing: "0.05em" }}>
+              Dwaraka Mai Cherukuri
+            </span>
               {/* Sparkle elements */}
               <span className="absolute -top-1 -left-2 text-[#E5A088] opacity-0 group-hover:opacity-100 transition-opacity duration-300">✦</span>
               <span className="absolute -top-1 -right-2 text-[#E5A088] opacity-0 group-hover:opacity-100 transition-opacity duration-500">✧</span>
