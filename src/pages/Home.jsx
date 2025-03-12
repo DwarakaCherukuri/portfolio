@@ -81,9 +81,9 @@ const Home = () => {
                 I'm Dwaraka Mai.
               </h1>
               
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-8 md: text-nowrap">
-                A Developer with a Designer's Eye.
-              </h2>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 mb-8 break-words md:whitespace-nowrap">
+  A Developer with a Designer's Eye.
+</h2>
               
               <p className="text-lg mb-12 max-w-md md:text-nowrap">
                 I create functional and beautiful web experiences to enhance user interactions.
@@ -254,13 +254,13 @@ const Home = () => {
       </section>
       
       {/* Projects Section */}
-      <section id="projects" className="min-h-screen flex flex-col">
-        <div className="max-w-7xl mx-auto w-full px-4 md:px-8 lg:px-16 flex flex-col py-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 text-right mb-12">
-            Selected Projects
-          </h2>
+      <section id="projects" className="min-h-screen flex flex-col mt-32 sm:mt-0">
+  <div className="max-w-7xl mx-auto w-full px-4 md:px-8 lg:px-16 flex flex-col py-16">
+    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-navy-900 text-right mb-12">
+      Selected Projects
+    </h2>
 
-          <div className="flex flex-col space-y-12">
+    <div className="flex flex-col space-y-12">
             {/* Project Card 1 */}
             <div className="bg-white rounded-lg border border-gray-200 p-8 shadow-sm">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -317,7 +317,7 @@ const Home = () => {
                 <div className="flex flex-col">
                   <h3 className="text-2xl font-bold mb-4">Portfolio Website</h3>
                   
-                  <a href="#" className="inline-block mb-6">
+                  <a href="https://youtu.be/-Cdiu8dzm_g" target="_blank" rel="noopener noreferrer" className="inline-block mb-6">
                     <button className="bg-[#FFDAB9] text-[#C25B3D] px-5 py-2 rounded-md font-medium border border-[#E9967A] hover:bg-[#FFE6D1] hover:-translate-y-1 hover:shadow-md transition-all duration-300">
   See it in Action
 </button>
@@ -338,7 +338,7 @@ const Home = () => {
                         <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd"></path>
                       </svg>
                     </a>
-                    <a href="https://www.reddit.com/user/Pretend_Homework_543/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black" aria-label="External Link">
+                    <a href="https://youtu.be/-Cdiu8dzm_g" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black" aria-label="External Link">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                       </svg>
@@ -386,7 +386,7 @@ const Home = () => {
                         <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd"></path>
                       </svg>
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black" aria-label="External Link">
+                    <a href="https://www.reddit.com/user/Pretend_Homework_543/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-black" aria-label="External Link">
                       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                       </svg>
